@@ -1,0 +1,876 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap'); */
+
+body {
+    background-color: rgb(247, 248, 249);
+    font-family: "popins", sans-serif;
+}
+
+.container {
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.navigasi .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVIGASI BAR */
+nav {
+    width: 100%;
+    background-color: rgb(247, 248, 249);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 90px 12px 90px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav div img {
+    width: 130px;
+}
+
+nav div img {
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style-type: none;
+} 
+
+nav ul li a {
+    color: #415123;
+    text-decoration: none;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 19px;
+    font-weight: 500;
+}   
+
+nav ul li a:hover {
+    border-bottom: 1px solid green;
+}
+
+.menu-icon {
+    font-size: 28px;
+    display: none;
+}
+
+/* !!HOME */
+.home {
+    background-image: url(bgutama.jpg);
+    background-position: center;
+    width: 100%;
+    height: 850px;
+    background-size: cover;
+}
+
+.home-wrapper {
+    padding: 80px 0 200px 0;
+   }
+   
+.home-wrapper h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: 'Poppins';
+    color: #333333;
+}
+
+.home-wrapper p {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 6 00;
+    font-size: 14px;
+    line-height: 28px;
+    color: #69803E;
+}
+
+.home-wrapper p span {
+    font-weight: 1500;
+    font-size: 16px ;                                                   
+}
+
+.home-wrapper button {
+    border: 1px solid;
+    padding: 25px 35px;
+    margin: 20px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home-wrapper button.button1 {
+    background-color: #415123;
+    font-size: 20px;
+    color: white;
+    margin: auto ;
+    width: 200px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.home-wrapper button.button1:hover {
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.home-wrapper button.button2 {
+    background-color: transparent;
+    color: #415123;
+    font-weight: 700;
+    font-size: 20px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.home-wrapper button.button2:hover {
+    color: #415123;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+/* PRODUCTS */
+.products .products-text h3 {
+    font-size: 50px;
+    padding-top: 150px;
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+}
+
+.products .products-text p {
+    color: #999999;
+}
+
+.products .products-text  {
+    background-color: rgb(247, 248, 249); 
+    text-align: center;
+}
+
+.products .products-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products .products-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.products .products-wrapper img {
+    width: 300px;
+    padding: 20px 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+    width: 350px;
+}
+
+.products .products-wrapper .menu1 h3, .menu2 h3, .menu3 h3 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.products .products-wrapper .menu1 h5, .menu2 h5, .menu3 h5 {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.products .products-wrapper .menu1 p, .menu2 p, .menu3 p {
+    text-align: left;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-size: 11px;
+    font-weight: 300;
+    
+}
+
+.products .products-wrapper .menu1, .menu2, .menu3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+	background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+
+.products .products-wrapper .menu1:hover, .menu2:hover, .menu3:hover {
+    transform: translateY(-10px);
+}
+
+.products .products-wrapper .menu1 button, .menu2 button, .menu3 button{
+    padding: 5px 130px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #415123;
+    color: white;
+    cursor: pointer;
+}
+
+.products .products-wrapper .menu1 button, p, .products .products-wrapper .menu2 button, p, .products .products-wrapper .menu3 button,p {
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+.products .products-wrapper .menu1 button:hover, .menu2 button:hover, .menu3 button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* AGE SECTION OLD AND YOUNG*/
+.agetext {
+    text-align: center;
+    background-color: rgb(247, 248, 249);
+    font-family: 'Poppins', 'Sans-serif';
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.agepick{ 
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.agepick .old {
+    background:rgba(3, 34, 9, 0.7) url(oldcouple.png);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+}
+
+.agepick .young {
+    background:rgba(3, 34, 9, 0.7) url(young.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+}
+
+.agepick .young .youngtext {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.agepick .young .youngtext button{
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.agepick .young .youngtext button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.agepick .old .oldtext {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.agepick .old .oldtext button {
+    padding: 20px 50px;
+    margin-top: 40px;
+
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.agepick .old .oldtext button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*! TESTIMONI */
+.testi-text {
+    text-align: center;
+    background-color: rgb(247, 248, 249);
+    padding-top: 150px;
+    font-family: "popins", sans-serif;
+}
+
+.testi-text h1 {
+    color: #333333;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.testi-text p {
+    color: #999999;
+    font-weight: 400;
+    font-size: 18px;
+}
+.testimoni .testimoni-wrapper{
+    width: auto;
+    height: 500px;
+    background-color: rgb(247, 248, 249);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimoni .testimoni-wrapper img {
+    width: 80px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.testimoni .testimoni-wrapper .testi1, .testi2, .testi3 {
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .testimoni .testimoni-wrapper .testi1 h2, .testi2 h2, .testi3 h2{
+    padding-top: 40px;
+} */
+
+.testimoni .testimoni-wrapper .testi1 p, .testi2 p, .testi3 p{ 
+    color: #999999;
+}
+
+/*! PENILAIAN */
+.testi-title-wrapper {
+    text-align: center;
+    font-family: "poppins", sans-serif;
+  }
+  .testi-title-wrapper h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333333;
+  }
+  .typography {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: gray;
+    font-weight: 400;
+  }
+  .testi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desc {
+    background-color: #FFFFFF;
+    padding: 50px 50px;
+    width: 700px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  .testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+  }
+  .star {
+    fill: #F2D805;
+    border: 0;
+  }
+  .name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-align: center;
+  }
+  .location {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    text-underline-position: 'from-font';
+    text-decoration-skip-ink: none;
+    text-align: center;
+  }
+  .nilai-user {
+    text-align: center;
+    flex-direction: column;
+  }
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user img{
+    width: 50px;
+    border-radius: 50%;
+  } 
+ 
+/*! SUBSCRIPTION */
+
+.sub {
+    position: relative;
+    background-image: linear-gradient(rgba(65, 81, 35, 0.7), rgba(65, 81, 35, 0.7)), url(olivebuah.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    color: #CBD8B4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub .sub-wrapper .sub-text {
+    font-size: 30px;
+}
+
+.sub .sub-wrapper .sub-text p {
+    text-align: center;
+}
+
+.sub .inputemail .emailsub{
+    padding: 20px 20px;
+}
+
+.sub  .inputemail input{
+    padding: 20px 200px;  
+    border-radius: 10px;
+    border: 0;
+}
+
+.sub .inputemail .emailsub .emailin {
+    color: #999999;
+    position: absolute;
+    margin: 18px 15px;
+}
+
+.sub .inputemail .emailsub .tombolemail {
+    padding: 8px 25px;
+    border-radius: 10px;
+    background-color: #415123;
+    color: white;
+    position: absolute;
+    top: 32px;
+    right: 35px;
+}
+
+.sub .emailsub {
+    position: relative;
+}
+
+.sub .inputemail .emailsub .tombolemail:hover {
+    background-color: #69803E;
+}
+
+/* !FOOTER WEBSITE */
+.site-footer{
+	background-color: #415123;
+		color: white;
+	padding:50px 0
+}
+.site-footer .container .footer-wrapper{
+	display: flex;
+	justify-content: space-between;
+	font-family: "poppins", sans-serif;
+}
+
+.site-footer .container .footer-wrapper .footer-col1, .footer-col2, .footer-col3, .footer-col4{
+	max-width:300px;
+}
+
+.site-footer .container .footer-wrapper .footer-col2, .footer-col3, .footer-col4{
+line-height:2.5rem;
+}
+
+.site-footer .container .footer-wrapper .footer-col1, .footer-col2 ul, .footer-col3 ul, .footer-col4{
+	list-style-type: none;
+}
+
+.site-footer .container .footer-wrapper .footer-col2 h4, .footer-col3 h4 {
+color:#CBD8B4;
+}
+
+.site-footer .container .footer-col4{
+	padding-top: 20px;
+}
+
+.site-footer .container .copyright{
+	border-top:2px solid #CBD8B4;
+	text-align:center;
+	color:#CBD8B4;
+}
+
+.site-footer .container .footer-col2 h4, .footer-col3 h4 {
+    margin-top: 0;
+}
+
+.site-footer .container .footer-col4{
+    padding-top: 0;
+}
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+/*! RESPONSIVE STYLES */
+/* ! RESPONSIVE PRODUCT */
+@media only screen and (max-width : 1102px){
+    .products .products-wrapper .container {
+        display: flex;
+        gap: 20px;
+        padding: 40px 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgb(247, 248, 249);
+        margin-top: 60px;
+    }
+}
+/*! Handphone L*/
+@media only screen and (max-width : 699px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 12px 12px 1vw;
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 64;
+        background-color: rgb(247, 248, 249);
+        right: 1;
+        left: 1;    
+        height: calc(100vh - 100%);
+    }
+
+    nav ul li a { 
+        justify-content: flex-start;
+    }
+
+   
+    nav ul.hidden {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        border: none;
+        background-color: #69803E;
+        color: white;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+
+    nav div img {
+        width: 80px;
+    }
+    /* !RESPONSIVE HOME */
+
+    .home {
+        background-image: url(homeimg2.jpg);
+        background-size: cover;
+    }
+    .home-wrapper{
+        padding: 0 0 200px 30px;   
+    }
+
+    .home-wrapper h2{
+        font-size: 30px;
+        line-height: normal;
+    }
+    .home-wrapper button {
+        border: 1px solid;
+        padding: 25px 35px;
+        margin: 20px 20px 20px 0;
+        border-radius: 20px;
+    }
+
+    /* !RESPONSIVE PRODUCT */
+    .products .products-text {
+        height: 200px;
+    }
+
+    .products .products-wrapper img{
+        width: 300px;
+    }
+    .products .products-wrapper .menu1 button, .menu2 button, .menu3 button{
+        padding: 5px 100px;
+    }
+     /* !RESPONSIVE AGE */
+    .agepick{ 
+        display: flex;
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+    }
+
+    .agepick .young {
+        width: auto;
+        height: 600px;
+        padding-bottom: 20px;
+    }
+
+    .agepick .old {
+        width: auto;
+        height: 600px;
+        padding-bottom: 20px;
+    }
+    /* !RESPONSIVE TESTIMONI DAN NILAI */
+    .testi-text {
+        margin-top: 180px;
+    }
+    .testimoni .testimoni-wrapper{
+        width: 100%;
+        height: 500px;
+        background-color: rgb(247, 248, 249);
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+
+    .testimoni .testimoni-wrapper .testi1, .testi2, .testi3 {
+        margin-top: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        height: 300px;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testi-text .container .testimoni-wrapper .testi1, .testi2, .testi3 {
+        margin-left: 2px;
+        height: auto;
+    }
+
+    /* !SUBSCRIBTION */
+    .sub {
+        height: 500px;
+    }
+    .sub .sub-wrapper .sub-text {
+        text-align: center;
+    }
+
+    .sub .sub-wrapper {
+        margin-top: 20px;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .sub .inputemail {
+        padding: auto;
+    }
+ 
+    .sub  .inputemail input{
+        padding: 50px;
+        border-radius: 10px;
+        border: 0;
+    }
+
+    .sub .inputemail .emailsub {
+        padding: 20px 0;
+    }
+    .desc {
+        width: 90%;
+      }
+
+    /* !FOOTER RESPONSIVE */
+        .footer .footer-wrapper {
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 100px 40px 100px;
+    
+    }
+    
+    .sub .inputemail .emailsub .tombolemail {
+        padding: 8px 25px;
+        border-radius: 10px;
+        background-color: #415123;
+        color: white;
+        position: absolute;
+        top: 90px;
+        right: 35px;
+    }
+
+    .site-footer .container .footer-wrapper {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.site-footer .container .footer-wrapper .footer-col1, .footer-col1 p, .footer-col2 , .footer-col3 , .footer-col4{
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	} 
+}
+
+
+/*TODO TABLET */
+@media only screen and (min-width : 700px) and (max-width : 1120px) {
+    /* !RESPONSIVE TABLET NAV */
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 40px 12px 1vw;
+        position: relative;
+        z-index: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 64;
+        background-color: rgb(247, 248, 249);
+        right: 2;
+        height: calc(100vh - 100%);
+    } 
+    nav ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+
+    nav div img {
+        width: 80px;
+    }
+    .home {
+        background-image: url(bgutama.jpg);
+        background-size: cover;
+    }
+
+    .home .container .home-wrapper {
+        margin-left: 40px;
+        padding-top: 10px;
+    }
+    .agepick{ 
+        display: flex;
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+    }
+
+    .testimoni .testimoni-wrapper {
+        flex-direction: column;
+        padding-top: 500px;
+        padding-bottom:580px;
+    }
+
+    .agepick .young {
+        width: auto;
+        height: 600px;
+        padding-bottom: 100px;
+    }
+
+    .agepick .old {
+        width: auto;
+        height: 600px;
+        padding-bottom: 50px;
+    }
+
+    .sub .sub-wrapper .sub-text {
+        text-align: center;
+    }
+
+    .sub .sub-wrapper {
+        padding: 50px;
+    }
+
+    .sub .inputemail {
+        margin-right: 60px;
+    }
+    
+    .sub  .inputemail input{
+        padding: 20px 200px;  
+        border-radius: 10px;
+    }
+    .products .products-wrapper .container {            
+        justify-content: center;
+    }
+
+
+    .testi-text h1 {
+        color: #333333;
+        font-weight: 800;
+        font-size: 50px;
+        padding-top: 100px;
+    }
+    
+}
